@@ -1,1 +1,1 @@
-# AWS-Subscription-Project
+# AWS Subscription Project
