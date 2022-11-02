@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'jasmine.jragon.Main'
+
+group 'jasmine.jragon'
+version '1.1.1'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    sourceCompatibility('17')
+    targetCompatibility('17')
+}
+
+dependencies {
+    implementation 'com.amazonaws:aws-java-sdk-dynamodb:1.12.328'
+
+    testImplementation 'org.testng:testng:7.6.1'
+}
+
+run {
+    standardInput = System.in
+}
+
+test {
+    useTestNG()
+}
