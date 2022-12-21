@@ -11,7 +11,7 @@ The code that I used for my AWS introductory project
   - The code invoked by the AWS Lambda function I have in production
 
 ### Operation Diagram
-![](AWS Subscription Diagram (1).png)
+![Diagram](Diagram.png)
 
 - The **CLI** is the way I control what subscriptions are in the database
 - The DynamoDB is the database of choice 
