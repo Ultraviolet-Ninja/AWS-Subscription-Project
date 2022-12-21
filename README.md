@@ -14,8 +14,8 @@ The code that I used for my AWS introductory project
 ![Diagram](Diagram.png)
 
 - The **CLI** is the way I control what subscriptions are in the database
-- The DynamoDB is the database of choice 
-- The Event Bridge triggers my Lmabda Expression at a specified time that I set
+- **DynamoDB** is the database of choice 
+- The **Event Bridge** triggers my **Lambda function** at a specified time that I set
 - The Lambda function draws information from my database and calculates if there's a subscription payment that I have in the near future
-  - Notifications will come if there's a subscription due today, tomorrow, or 3 days out 
+  - Notifications will be sent to Amazon SNS when there's a subscription due today, tomorrow, or 3 days from the current date
 - In SNS, there's a topic that I have an email subscribed to so that I can get my notifications on upcoming subscriptions
